@@ -68,3 +68,15 @@ RPROVIDES:${PN} += "lib7z.so()(64bit) 7z lib7z.so"
 RPROVIDES:${PN}-dev += "lib7z.so()(64bit) 7z lib7z.so"
 
 BBCLASSEXTEND = "native nativesdk"
+
+# https://nvd.nist.gov/vuln/detail/CVE-2022-47111
+CVE_STATUS[CVE-2022-47111] = "fixed-version: The issue was found in 7-Zip 22.01. Some later versions are unaffected."
+# https://nvd.nist.gov/vuln/detail/CVE-2022-47112
+CVE_STATUS[CVE-2022-47112] = "fixed-version: The issue was found in 7-Zip 22.01. Some later versions are unaffected."
+# https://sourceforge.net/p/sevenzip/patches/417/
+# https://www.appsecure.security/vulnerability-database/cve-2023-40481
+CVE_STATUS[CVE-2023-40481] = "fixed-version: That bug was fixed in v23.00."
+# https://www.appsecure.security/vulnerability-database/CVE-2023-52168
+CVE_STATUS[CVE-2023-52168] = "fixed-version: A high-severity vulnerability identified in the NtfsHandler.cpp NTFS handler of 7-Zip prior to version 24.01."
+# https://www.appsecure.security/vulnerability-database/CVE-2023-52169
+CVE_STATUS[CVE-2023-52169] = "fixed-version: Relates to the NtfsHandler.cpp NTFS handler in 7-Zip, affecting versions prior to 24.01."
